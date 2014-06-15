@@ -5,12 +5,12 @@
 
 PROJECTNAME=""
 if [ -z "$PROJECTNAME" ]; then
-    echo "Devi specificare il nome del progetto!"
+    echo "You have to change bootstrap.sh and set the content of PROJECTNAME!"
     exit 1
 fi
 
 if ! [[ $PROJECTNAME =~ ^[0-9a-z\_\-]+$ ]]; then
-    echo "Il nome del progetto puo\` essere composto solo da lettere minuscole, numeri, il trattino e l'underscore"
+    echo "The project name has to be composed by lowercase letters, numbers, dash and underscore"
     exit 1
 fi
 
