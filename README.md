@@ -13,14 +13,14 @@ How to use:
      ```bash
      PROJECTNAME="project-name"
      ```
-2. the default ports on the host is 8081 for apache and 3307 for mysql; if you want you can change them
-3. add to the host file of your computer (/etc/hosts on Linux, C:\Windows\System32\drivers\etc\hosts on Windows) the row
+2. the default ports on the host are 8081 for apache and 3307 for mysql, you can change them in the Vagrantfile
+3. add to the host file of your computer (/etc/hosts on Linux, C:\Windows\System32\drivers\etc\hosts on Windows) a new line
      
      ```
      127.0.0.1  project-name.dev www.project-name.dev
      ```
    you have to change project-name with the name that you put inside PROJECTNAME in the first step
 3. launch the project with ```vagrant up```
-4. now you can access to apache on http://project-name.dev:8081, anche phpmyadmin on http://127.0.0.1:8081/phpmyadmin/
+4. now you can access to apache on http://project-name.dev:8081, there also phpmyadmin installed on http://127.0.0.1:8081/phpmyadmin/
 
 The project directory (the one that contains the Vagrantfile and bootstrap.sh) is the document root for apache and the logs are saved in the logs folder.
